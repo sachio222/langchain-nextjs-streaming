@@ -1,3 +1,7 @@
+/*
+  Copyright (c) 2023 J. Krajewski and released under the MIT license.
+*/
+
 import Chatbot from "../components/Chatbot";
 
 function Home() {
