@@ -4,9 +4,9 @@ This project demonstrates how to minimally achieve live streaming with Langchain
 
 ## Installation
 
-1. Clone the repository:
+1. Copy files from repository into your project (do not clone, is not standalone):
 ```
-git clone https://github.com/sachio222/langchain-nextjs-streaming.git
+https://github.com/sachio222/langchain-nextjs-streaming.git
 ```
 
 2. Install dependencies:
