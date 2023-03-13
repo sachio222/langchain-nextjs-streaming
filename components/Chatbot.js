@@ -29,7 +29,7 @@ function Chatbot() {
   return (
     <>
       <button
-        className="text-lg font-bold text-white"
+        className="text-lg font-bold text-slate-500"
         onClick={handleButtonClick}
       >
         Start Stream
