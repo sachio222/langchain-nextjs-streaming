@@ -1,10 +1,10 @@
 # Langchain Chatbot with Real-Time Data Streaming using Next.js
 
-This project demonstrates how to minimally achieve live streaming with Langchain, ChatGpt, and Next.js to get real-time data from the backend to the frontend. Styles are [Tailwind css](https://tailwindcss.com)
+This project demonstrates how to minimally achieve live streaming with Langchain, ChatGpt, and Next.js to get real-time data from the backend to the frontend.
 
 ## Installation
 
-1. Copy files from repository into your project (do not clone, is not standalone):
+1. Copy files from repository into your project (do not clone repo, is not stand-alone):
 ```
 https://github.com/sachio222/langchain-nextjs-streaming.git
 ```
@@ -28,7 +28,7 @@ OPENAI_API_KEY=YOUR_API_KEY
 npm run dev
 ```
 
-2. Navigate to `http://localhost:3000` in your browser.
+2. Navigate to `http://localhost:3000` in your browser. index.js will automatically run.
 
 3. Click the "Start Stream" button to initiate the chatbot stream.
 
@@ -37,8 +37,9 @@ npm run dev
 - [LangchainJS](https://github.com/hwchase17/langchainjs) for LLM chains
 - [ChatGpt](https://platform.openai.com/docs/guides/chat) using the 'gpt-3.5-turbo' model.
 - [Next.js](https://nextjs.org/) for server-side rendering and real-time updates
+- [Tailwind css](https://tailwindcss.com) for minimal styling.
 
 ## Credits
 
-Jake Krajewski 2023.
+Copyright (c) 2023 J. Krajewski and released under the MIT license.
 This project was inspired by [Langchain's example code](https://hwchase17.github.io/langchainjs/docs/modules/chat_models/examples/streaming/) and being unable to find a solution anywhere.
