@@ -1,3 +1,7 @@
+/*
+  Copyright (c) 2023 J. Krajewski and released under the MIT license.
+*/
+
 import { ChatOpenAI } from "langchain/chat_models";
 import { HumanChatMessage, SystemChatMessage } from "langchain/schema";
 
