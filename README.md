@@ -6,7 +6,7 @@ This project demonstrates how to build a chatbot that integrates Langchain, Chat
 
 1. Clone the repository:
 ```
-git clone https://github.com/username/repo.git
+git clone https://github.com/sachio222/langchain-nextjs-streaming.git
 ```
 
 2. Install dependencies:
