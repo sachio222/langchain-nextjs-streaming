@@ -2,7 +2,7 @@ import Chatbot from "../components/Chatbot";
 
 function Home() {
   return (
-    <div>
+    <div className="h-screen">
       <h1>Minimal streaming chatbot example!</h1>
       <Chatbot />
     </div>
