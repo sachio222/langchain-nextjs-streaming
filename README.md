@@ -1,6 +1,6 @@
 # Langchain Chatbot with Real-Time Data Streaming using Next.js
 
-This project demonstrates how to build a chatbot that integrates Langchain, ChatGpt, and Next.js to stream real-time data from the backend to the frontend.
+This project demonstrates how to build a chatbot that integrates Langchain, ChatGpt, and Next.js to stream real-time data from the backend to the frontend. Styles are [Tailwind css](https://tailwindcss.com)
 
 ## Installation
 
