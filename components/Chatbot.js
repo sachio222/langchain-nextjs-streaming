@@ -1,3 +1,7 @@
+/*
+  Copyright (c) 2023 J. Krajewski and released under the MIT license.
+*/
+
 import { useState } from "react";
 
 function Chatbot() {
