@@ -4,7 +4,7 @@
 
 import { ChatOpenAI } from "langchain/chat_models";
 import { HumanChatMessage, SystemChatMessage } from "langchain/schema";
-
+import { CallbackManager } from "langchain/callbacks";
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 export default async function handler(req, res) {
@@ -16,19 +16,30 @@ export default async function handler(req, res) {
     if (!OPENAI_API_KEY) {
       throw new Error("OPENAI_API_KEY is not defined.");
     }
-    
-    const chat = new ChatOpenAI({
-      openAIApiKey: OPENAI_API_KEY,
-      temperature: 0.9,
+
+
+    let s = "";
+    const chatStreaming = new ChatOpenAI({
       streaming: true,
-      callbackManager: { handleNewToken },
+      callbackManager: CallbackManager.fromHandlers({
+        async handleLLMNewToken(token) {
+          // console.clear();
+          // s += token;
+          // console.log(s);
+          handleNewToken(token);
+        },
+      }),
     });
+
+    // const responseD = await chatStreaming.call([
+    //   new HumanChatMessage("Write me a song about sparkling water."),
+    // ]);
 
     function handleNewToken(token) {
       res.write(`${token}`);
     }
 
-    await chat.call([
+    await chatStreaming.call([
       new SystemChatMessage(
         "You are a poet like tennyson, kipling, frost. You're famous and enjoyed by many."),
       new HumanChatMessage("Write me a poem that rhymes about traveling from Mississippi to London for the first time.")
